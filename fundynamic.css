@@ -31,6 +31,10 @@ header h1 {
 	font-size: 32px;
 }
 
+strong {
+	font-style: italic;
+}
+
 .centered {
 	text-align: center;
 }
@@ -38,19 +42,22 @@ header h1 {
 h1.why {
 	font-size: 32px;
 	font-weight: bold;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	color: #0080FF;
 }
 
 h1.how {
 	font-size: 32px;
 	font-weight: bold;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	color: #0080FF;
 }
 
 h1.what {
 	font-size: 32px;
 	font-weight: bold;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	color: #0080FF;
 }
 
 h1.cta {

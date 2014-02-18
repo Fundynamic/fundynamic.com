@@ -15,6 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-size: 19px;
 	vertical-align: baseline;
 }
 
@@ -26,6 +27,10 @@ body {
 	color: #000;
 }
 
+p {
+	padding: 0px 20px;
+}
+
 header {
 	background-color: black;
 	color: white;
@@ -35,9 +40,9 @@ header {
 
 header h1 {
 	width: 200px;
-	padding-top: 10px;
+	padding-top: 16px;
 	margin-left: auto;
-	font-size: 2.1em;
+	font-size: 28px;
 }
 
 header div.social-links {
@@ -97,31 +102,31 @@ strong {
 	text-align: center;
 }
 
-h1.why {
-	font-size: 3em;
+h1 {
+	font-size: 36px;
+}
+
+h1.why {	
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.how {
-	font-size: 3em;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.what {
-	font-size: 3em;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.cta {
-	font-size: 2em;
+	font-size: 28px;
 	margin-bottom: 30px
 }
 
 .explenation {
-	font-size: 1.4em;
 	text-align: justify;
 	display: block;
 	margin-left: auto;
@@ -158,6 +163,9 @@ footer {
 	}
 
 	header h1 {
+		font-size: 28px;
+		text-align: center;
+		font-style: inherit;
 		margin-left: auto;
 		margin-right: auto;
 	}

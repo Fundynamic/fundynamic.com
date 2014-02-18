@@ -13,7 +13,8 @@ body {
 	background: white; 
 	width: 100%;
 	font-family: 'Exo 2', sans-serif;
-	font-size: 18px;
+	font-weight: bold;
+	color: #000;
 }
 
 header {
@@ -35,17 +36,23 @@ header div.social-links {
 	margin-top: -38px;
 }
 
+li {
+	padding: 5 20;
+	text-align: left;
+}
+
 .social-links ul {
 	list-style-type: none;
 	text-align: center;
 }
 
 .social-links ul li {
+	padding: 4;
 	display: inline;
 }
 
 .social-links ul li a {
-	background-color: rgb(32, 32, 32);
+	background-color: rgb(64, 64, 64);
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -62,6 +69,18 @@ header div.social-links {
 	height: 32px;
 }
 
+a:hover,
+.social-links ul li a:hover {
+	background-color: #0174DF;
+	color: white;
+}
+
+a {
+	color: #0174DF;
+	background-color: white;
+	text-decoration: none;
+}
+
 strong {
 	font-style: italic;
 }
@@ -74,21 +93,21 @@ h1.why {
 	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 30px;
-	color: #0174DF;
+	color: #FF4000;
 }
 
 h1.how {
 	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 30px;
-	color: #0174DF;
+	color: #FF4000;
 }
 
 h1.what {
 	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 30px;
-	color: #0174DF;
+	color: #FF4000;
 }
 
 h1.cta {
@@ -99,7 +118,7 @@ h1.cta {
 
 .explenation {
 	font-size: 20px;
-	text-align: center;
+	text-align: justify;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -121,11 +140,10 @@ h1.cta {
 }
 
 footer {
-	margin-top: 20px;
-	padding-right: 20px;
+	padding: 10px;
 	height: 40px;
 	bottom: 0;
-	text-align: right;
+	text-align: left;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,4 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2:200&subset=latin,latin-ext);
+@font-face {
+    font-family: 'exo_2.0extra_light';
+    src: url('exo2.0-extralight-webfont.eot');
+    src: url('exo2.0-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('exo2.0-extralight-webfont.woff') format('woff'),
+         url('exo2.0-extralight-webfont.ttf') format('truetype'),
+         url('exo2.0-extralight-webfont.svg#exo_2.0extra_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, .home-reasons, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -12,8 +21,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	background: white; 
 	width: 100%;
-	font-family: 'Exo 2', sans-serif;
-	font-weight: bold;
+	font-family: 'exo_2.0extra_light';
+	font-weight: normal;
 	color: #000;
 }
 
@@ -27,7 +36,6 @@ header {
 header h1 {
 	width: 200px;
 	padding-top: 10px;
-	font-weight: 700;
 	margin-left: auto;
 	font-size: 32px;
 }
@@ -91,28 +99,24 @@ strong {
 
 h1.why {
 	font-size: 32px;
-	font-weight: bold;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.how {
 	font-size: 32px;
-	font-weight: bold;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.what {
 	font-size: 32px;
-	font-weight: bold;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.cta {
 	font-size: 20px;
-	font-weight: bold;
 	margin-bottom: 30px
 }
 

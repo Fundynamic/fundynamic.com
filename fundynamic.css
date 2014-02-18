@@ -37,7 +37,7 @@ header h1 {
 	width: 200px;
 	padding-top: 10px;
 	margin-left: auto;
-	font-size: 32px;
+	font-size: 2.1em;
 }
 
 header div.social-links {
@@ -98,40 +98,42 @@ strong {
 }
 
 h1.why {
-	font-size: 32px;
+	font-size: 3em;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.how {
-	font-size: 32px;
+	font-size: 3em;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.what {
-	font-size: 32px;
+	font-size: 3em;
 	margin-bottom: 30px;
 	color: #FF4000;
 }
 
 h1.cta {
-	font-size: 20px;
+	font-size: 2em;
 	margin-bottom: 30px
 }
 
 .explenation {
-	font-size: 20px;
+	font-size: 1.4em;
 	text-align: justify;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 60px;
+	line-height: 150%;
 	width: 765px;
 }
 
 .explenation p {
 	margin-bottom: 10px;
+	padding-top: 15px;
 }
 
 .avatar {

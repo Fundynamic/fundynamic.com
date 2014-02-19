@@ -1,3 +1,5 @@
-$(document).ready(function() {
-    $('header').scrollToFixed();
-});
+if (!Modernizr.touch) {   
+	$(document).ready(function() {
+	    $('header').scrollToFixed();
+	});
+}

@@ -38,6 +38,12 @@ module.exports = function(grunt) {
 	        	cwd: 'html/',
 	        	src: '*',
 	        	dest: 'build/'
+	    	},
+	    	static: {
+	        	expand: true,
+	        	cwd: 'static/',
+	        	src: '**/**',
+	        	dest: 'build/'
 	    	}
 	    },
 

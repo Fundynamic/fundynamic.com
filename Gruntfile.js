@@ -30,13 +30,13 @@ module.exports = function(grunt) {
       		css: {
 		        expand: true,
 		        cwd: 'css/',
-		        src: '*',
+		        src: '**/**',
 		        dest: 'build/'
 		    },
 	    	html: {
 	        	expand: true,
 	        	cwd: 'html/',
-	        	src: '*',
+	        	src: '**/**',
 	        	dest: 'build/'
 	    	},
 	    	static: {

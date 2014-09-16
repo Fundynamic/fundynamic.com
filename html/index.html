@@ -19,7 +19,6 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +27,13 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body style="background-color: #111;">
+    <div id="background_cycler" style="display: none">
+      <img class="active" src="images/01_launch.jpg" alt=""/>
+      <img src="images/10_coderetreat.jpg" alt="" />
+      <img src="images/04_parachute_tandem.jpg" alt="" />
+      <img src="images/08_piano.jpg" alt="" />
+    </div>
 
     <div class="site-wrapper">
 
@@ -81,7 +86,7 @@
               <a href="#" class="btn btn-lg btn-default">Need help improving your CI? Contact me.</a>
             </p>
           </div> -->
-            <div class="inner cover">
+          <div class="inner cover">
             <h1 class="cover-heading">Learning. Sharing. Together.</h1>
             <p class="lead">I organize and facilitate events where I stimulate creativity and learning. I found a perfect format within <a class="yellow" href="http://coderetreat.org/profile/stefanhendriks">coderetreats</a>.
             <p class="lead">Its fun.</p>
@@ -90,25 +95,48 @@
             </p>
           </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              Kvk: 59979216 | Telefoon: <a href="tel:+31624107184">06 24 107 184</a> | <a href="http://www.twitter.com/stefanhendriks" target="_blank">twitter</a> | <a href="http://www.linkedin.com/in/stefanhendriks" target="_blank">linkedIn</a> | <a href="https://github.com/stefanhendriks" target="_blank">github</a>
-            </div>
+        <div class="mastfoot">
+          <div class="inner">
+            Kvk: 59979216 | Telefoon: <a href="tel:+31624107184">06 24 107 184</a> | <a href="http://www.twitter.com/stefanhendriks" target="_blank">twitter</a> | <a href="http://www.linkedin.com/in/stefanhendriks" target="_blank">linkedIn</a> | <a href="https://github.com/stefanhendriks" target="_blank">github</a>
           </div>
-
         </div>
 
+        </div>
       </div>
-
     </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript">
+      function cycleImages(){
+        console.log("Cycle!");
+        var $active = $('#background_cycler .active');
+
+        var $next =  ($('#background_cycler .active').next().length > 0) ? 
+                      $('#background_cycler .active').next() : 
+                      $('#background_cycler img:first');
+
+        console.log("next is ", $next[0]);
+        $next.css('z-index', 2); //move the next image up the pile
+        $active.fadeOut(500, function() {
+          //fade out the top image
+          $active.css('z-index', 1).show().removeClass('active'); //reset the z-index and unhide the image
+          $next.css('z-index',3).addClass('active');              //make the next image the top one
+        });
+
+    }
+
+    $(window).load(function(){      
+      $('#background_cycler').fadeIn(2500);//fade the background back in once all the images are loaded
+
+      // run every 7s
+      setInterval('cycleImages()', 7500);
+    })
+    </script>
   </body>
 </html>

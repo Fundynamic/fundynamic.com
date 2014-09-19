@@ -62,7 +62,7 @@
 
           <div class="inner cover" style="display: none">
             <h1 class="cover-heading">Do you want to launch your business?</h1>
-            <p class="lead">Let me help you get things done and live.</p>
+            <p class="lead">Let me help you get things done. And on production. Of course.</p>
             <p class="lead">Validate your business case. Fast.</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-default">Contact me</a>
@@ -71,11 +71,11 @@
 
           <div class="inner cover" style="display: none">
             <h1 class="cover-heading">I work on <span class="usp">trust</span></h1>
-            <p class="lead">That means I only have contact with you directly. No intermediates.</p>
-            <p class="lead">I'm only concerned about your happyness.</p>
+            <p class="lead">That means I only have contact with you directly.</p>
+            <p class="lead">Your success is my succes.</p>
             <p class="lead">Even if it means you have to let me go.</p>            
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Contact me</a>
+              <a href="#" class="btn btn-lg btn-default">Lets discuss how we can make your idea reality</a>
             </p>
           </div>
 
@@ -147,44 +147,80 @@
       // this HTML body. 
       var $quotes = $('.inner.cover');
       var quoteIndex = 0;
+      var cyclingBackground = false;
+      var cyclingQuotes = false;
+      var cyclingContent = false;
 
-      function cycleImages(){
-        var $active = $('#background_cycler .active');
+      function cycleBackground() {
+        if (cyclingBackground) return;
+        cyclingBackground = true;
+
+        var $activeBackground = $('#background_cycler .active');
 
         var $next =  ($('#background_cycler .active').next().length > 0) ? 
                       $('#background_cycler .active').next() : 
                       $('#background_cycler img:first');
 
-        var $activeCta = $('.inner.cover.active');        
-
-        var $nextQuote = $($quotes[quoteIndex]);
-        quoteIndex++;
-        if (quoteIndex >= $quotes.length) quoteIndex = 0;
 
         $next.css('z-index', 2);
 
-        $active.fadeOut(500, function() {
-          $active.css('z-index', 1).show().removeClass('active');
+        // Crossfade active background
+        $activeBackground.fadeOut(500, function() {
+          $activeBackground.css('z-index', 1).show().removeClass('active');
           $next.css('z-index',3).addClass('active');
-        });
-
-        $activeCta.fadeOut(500, function() {
-          $activeCta.removeClass('active');
-          $nextQuote.addClass('active');
-          $nextQuote.fadeIn(500);
-          $nextQuote.show();
+          cyclingBackground = false;
         });
       }
 
-    $(window).load(function(){      
-      $('#background_cycler').fadeIn(1500, function() {
-        $($quotes[0]).fadeIn(500).show().addClass('active');
-        quoteIndex++;
-      });//fade the background back in once all the images are loaded
+      function cycleQuotes() {
+        if (cyclingQuotes) return;
+        cyclingQuotes = true;        
+        // Fade out/in active quote
+        var $activeCta = $('.inner.cover.active');
+        $activeCta.fadeOut(500, function() {
+          var $nextQuote = $($quotes[quoteIndex]);
+          quoteIndex++;
+          if (quoteIndex >= $quotes.length) quoteIndex = 0;
+          
+          // make new quote active
+          $activeCta.removeClass('active');
+          $nextQuote.addClass('active');
 
-      // run every 7s
-      setInterval('cycleImages()', 10000);
-    })
+          // fade in new quote
+          $nextQuote.fadeIn(500, function() {
+            cyclingQuotes = false;
+          });
+        });     
+      }
+
+      function cycleContent() {
+        if (cyclingContent) return;
+        cyclingContent = true;
+        cycleBackground();
+        cycleQuotes();
+        cyclingContent = false;
+      }
+
+      function fadeInInitialBackground() {
+        // fade the background back in once all the images are loaded
+        $('#background_cycler').fadeIn(1500, function() {
+          $($quotes[0]).fadeIn(500).show().addClass('active');
+          quoteIndex++;
+        });        
+      }
+
+      $(window).load(function() {
+        fadeInInitialBackground();        
+        // setInterval('cycleContent()', 3000);
+      });
+
+      $("body").keydown(function(e) {
+        if(e.keyCode == 37) { // left
+          cycleContent();
+        } else if(e.keyCode == 39) { // right
+          cycleContent();
+        }
+      });
     </script>
   </body>
 </html>

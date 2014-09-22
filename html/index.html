@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
     <title>Cover Template for Bootstrap</title>
 
@@ -27,128 +27,140 @@
     <![endif]-->
   </head>
 
-  <body style="background-color: #111;">
-    <div id="background_cycler" style="display: none">
-      <img class="active" src="images/11_speed_sonic_boom_1920.jpg" alt=""/>
-      <img src="images/01_launch_1920.jpg" alt=""/>
-      <img src="images/04_parachute_tandem.jpg" alt="" />
-      <img src="images/10_coderetreat.jpg" alt="" />
-      <img src="images/08_piano.jpg" alt="" />
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <h3>Fundynamic</h3>
+        </div>
+        <div class="menu-items">
+          <ul class="nav masthead-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#availability">Availability & Contact</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
     </div>
 
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Fundynamic</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">Availability & Contact</a></li>
-              </ul>
-            </div>
-          </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <a data-role="update-header-nav" name="home"></a>
+    <div class="jumbotron picture-band">
+      <div class="container">
+        <h1>The only way to go fast is to go well</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p class="ctas">
+          <a class="btn btn-primary btn-lg secondary" role="button" href="#recommendations">What do others say?</a> 
+          <a class="btn btn-primary btn-lg primary" role="button" href="#availability">Hire me</a> 
+        </p>
+      </div>      
+    </div>
 
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading">Do you want to <span class="usp">speed up</span> your productivity?</h1>
-            <p class="lead">I'm experienced in Java, Ruby, TDD, Continuous Integration, Continuous Deployment, Agile, <a href="#">and more.</a></p>
-            <p class="lead">I get things done <em>fast</em> and <em>well</em>.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">My skills</a>
-              <a href="#" class="btn btn-lg primary btn-default">Contact me</a>
-            </p>
-          </div>
+    <a data-role="update-header-nav" name="skills"></a>
+    <div class="container">
+    <div class="row">
+      <h1>Skills</h1>
+      <div class="col-md-6">
+        <h3>Languages</h3>
+        <p>I am sufficient in the following languages, ordered by experience:</p>
+        <ul>
+          <li>Java</li>
+          <li>Ruby</li>
+          <li>Javascript</li>
+          <li>C/C++</li>
+          <li>HTML & CSS</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Craftsmanship</h3>
+        <p>I believe Software Development is the greatest profession in the work. And I do it with passion. I follow the following principles and practices.</p>
+        <ul>
+          <li>Continuous Deployment</li>
+          <li>Continuous Integration</li>
+          <li>Test Driven Development</li>
+          <li>SOLID Principles</li>
+          <li>DRY & YAGNI</li>
+          <li>Clean Code</li>
+        </ul>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Tools</h3>
+        <p>A Developer should work with the tools they are best at performing their work. I'm familiar with the following:</p>
+        <ul>
+          <li>IntelliJ IDEA</li>
+          <li>Rubymine</li>
+          <li>Eclipse</li>
+          <li>Sublime,VIM,Atom</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Tools</h3>
+        <p>A Developer should work with the tools they are best at performing their work. I'm familiar with the following:</p>
+        <ul>
+          <li>IntelliJ IDEA</li>
+          <li>Rubymine</li>
+          <li>Eclipse</li>
+          <li>Sublime,VIM,Atom</li>
+        </ul>
+      </div>
+    </div>
+    
+    <a data-role="update-header-nav" name="recommendations"></a>
+    <div class="row">
+    <h1>Recommendations</h1>    
+      <blockquote>
+        <p>
+          Stefan demonstrated a level of seniority that could normally be expected only of somebody who is at least ten years older.
+        </p>
+        <footer>Zeger Hendrikse</footer>
+      </blockquote>      
+    </div>
 
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading">Do you want to <span class="usp">launch</span> your business?</h1>
-            <p class="lead">Let me help you <em>get things done</em>.</p>            
-            <p class="lead">Validate your business case. Fast.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Contact me</a>
-            </p>
-          </div>
-
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading">I work on <span class="usp">trust</span></h1>
-            <p class="lead">100% transparency</p>
-            <p class="lead">No intermediates</p>
-            <p class="lead">No overhead</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Want to know more? Contact me</a>
-            </p>
-          </div>
-
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading"><span class="usp">Collaboration</span> over contract negotiation</h1>
-            <p class="lead">I don't seek a collaboration where we both get what we want</p>
-            <p class="lead">I seek a collaboration where we both can get <em>more</em> than we want</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Interested? Contact me.</a>
-            </p>
-          </div>
-
-
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading"><span style="color: red">Red.</span> <span style="color: green">Green.</span> <span class="usp">Refactor.</span></h1>
-            <p class="lead">TDD is great. But how do you deal with existing, untested, (legacy) code? Want to learn more? Hire me to give a workshop about TDD.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Interested? Contact me.</a>
-            </p>
-          </div>
-
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading">Write Clean Code. Always. <span class="usp">Everywhere.</span></h1>
-            <p class="lead">The problem with quick and dirty is that the dirty remains long after the quick has been forgotten. </p>
-            <p class="lead"><em>The only way to go fast is to go well</em></p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Interested? Contact me.</a>
-            </p>
-          </div>
-
-
-          <div class="inner cover" style="display: none">
-            <h1 class="cover-heading">Want to improve your Continuous Integration process?</h1>
-            <p class="lead">Without CI you cannot tell your software actually works. I'm experienced using several CI tooling and processes.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Need help improving your CI? Contact me.</a>
-            </p>
-          </div>
-
-          <div class="inner cover" style="display: none">
-                <h1 class="cover-heading"></h1>
-                <p class="lead">Without CI you cannot tell your software actually works. I'm experienced using several CI tooling and processes.</p>
-                <p class="lead">
-                  <a href="#" class="btn btn-lg btn-default">Need help improving your CI? Contact me.</a>
-                </p>
-          </div>
-
-           <div class="inner cover" style="display: none">
-              <h1 class="cover-heading">Learning. Sharing. Together.</h1>
-              <p class="lead">I organize and facilitate events where I stimulate creativity and learning. I found a perfect format within <a class="yellow" href="http://coderetreat.org/profile/stefanhendriks">coderetreats</a>.
-              <p class="lead">Its fun.</p>
-              <p class="lead">
-                <a href="#" class="btn btn-lg btn-default">Can you run one for me?</a>
-              </p>
-          </div>
-      
-          <div class="mastfoot" style="width: 100%">
-            <div class="inner">
-              Kvk: 59979216 | <a href="http://www.linkedin.com/in/stefanhendriks">linkedIn</a> | <a href="https://github.com/stefanhendriks">github</a> | <a href="#">more contact info</a>
-              <!-- Telefoon: <a href="tel:+31624107184">06 24 107 184</a> | -->
-            </div>
-          </div>
-
+    <div class="row">
+      <h1>Workshops</h1>
+      <p>I believe doing hands-on workshops are the only way to really learn something. If you seek for a workshop I will hold in-house at your company. Look no further and contact me.
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Test Driven Development</h2>
+          <p>Writing tests is vital for agility. Writing tests first is even better. Driving your design through tests results in code that complies to YAGNI, DRY and more.</p>
+          <p>In this workshop I give you a hands-on experience. I'll briefly tell you what TDD is and then we practice using several kata's.</p>
+        </div>
+        <div class="col-md-6">
+          <h2>Coderetreats</h2>
+          <p>Deliberate practice using the Game Of Life. Using constraints I make you think differently. We discuss the 4 rules of Simple Design.</p>
+          <p>If you don't want to wait for a public event, contact me and we'll do one at your company.</p>
+          <p>Want to know more? <a href="#availability">Contact me</a></p>
         </div>
       </div>
-      <div>
     </div>
+
+    <a data-role="update-header-nav" name="availability"></a>
+    <div class="row">
+      <h1>Availability</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-6">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="waypoints.min.js"></script>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
@@ -156,6 +168,10 @@
       // TODO: Find a way to keep background image in sync with quotes. So we can start
       // at random when page loads instead of always the first. We can also then randomly loop
       // through the quotes/backgrounds.
+
+      $("a[data-role~='update-header-nav']").waypoint(function(direction) {
+        console.log("hit waypoint", direction);
+      });
 
       // TODO: When clicking on "Skills" or "Contact", make it seem like a Single Page interface. Load the HTML using Jquery and place it within
       // this HTML body. 
@@ -185,6 +201,10 @@
           cyclingBackground = false;
         });
       }
+
+      $('.thing').waypoint(function(direction) {
+        alert('Top of thing hit top of viewport.');
+      });
 
       function cycleQuotes() {
         if (cyclingQuotes) return;
@@ -222,6 +242,21 @@
           quoteIndex++;
         });        
       }
+
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top - 40
+              }, 500);
+              return false;
+            }
+          }
+        });
+      });
 
       $(window).load(function() {
         fadeInInitialBackground();        

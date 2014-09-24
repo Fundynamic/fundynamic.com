@@ -6,6 +6,15 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #333;
+  color: white;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+.row {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar-header h3 {
@@ -53,10 +62,25 @@ body {
 
 .picture-band {
   color: white; 
-  height: 500px;
-  background-image: url('images/01_launch_1920.jpg');
+  height: 500px;  
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
+}
+
+.picture-band-stars {
+  background-image: url('images/09_spiral_galaxy_1920.jpg');
+}
+
+.picture-band-learning {
+  background-image: url('images/10_coderetreat_1920.jpg');  
+}
+
+.picture-band-speed {
+  background-image: url('images/11_speed_sonic_boom_1920.jpg');
+}
+
+.picture-band-launch {
+  background-image: url('images/01_launch_1920.jpg');
 }
 
 .picture-band h1 {  
@@ -67,6 +91,19 @@ body {
   font-size: 1.8em;
   text-shadow: 0 1px 1px rgba(0,0,0,1.0);
 }
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+}
+
+.picture-band-footer {
+  margin-bottom: 0;
+  margin-top: 140px;
+  background-color: black;
+}
+
 
 .ctas {
   padding: 20px;
@@ -86,11 +123,39 @@ body {
   margin-top: 20px;
 }
 
+.last-row {
+  margin-bottom: 100px;
+}
+
 h1 {
   text-shadow: 0 1px 1px rgba(0,0,0, 0.3);
-  color: #37377B;
+  color: yellow;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 blockquote {
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 600px;
+  }
+
+  .navbar-header {
+    float: left;
+    padding-left: 10px;
+  }
 }

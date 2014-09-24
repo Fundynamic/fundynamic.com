@@ -60,7 +60,7 @@ body {
   border-bottom-color: #fff;
 }
 
-.picture-band {
+.picture-band {  
   color: white; 
   height: 500px;  
   background-position: center; 
@@ -72,14 +72,17 @@ body {
 }
 
 .picture-band-learning {
+  margin-top: 60px;
   background-image: url('images/10_coderetreat_1920.jpg');  
 }
 
 .picture-band-speed {
+  margin-top: 60px;
   background-image: url('images/11_speed_sonic_boom_1920.jpg');
 }
 
 .picture-band-launch {
+  margin-top: 60px;
   background-image: url('images/01_launch_1920.jpg');
 }
 
@@ -100,7 +103,7 @@ body {
 
 .picture-band-footer {
   margin-bottom: 0;
-  margin-top: 140px;
+  margin-top: 100px;
   background-color: black;
 }
 

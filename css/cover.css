@@ -70,6 +70,21 @@ a {
   text-decoration: none;
 }
 
+.quote-cycler {
+  font-size: 2em;
+  padding-top: 30px;
+}
+
+.quote-cycler a {
+  color: black;
+  background-color: white;
+}
+
+.quote-cycler a:hover {
+  color: white;
+  background-color: black;
+}
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;

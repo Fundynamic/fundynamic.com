@@ -58,6 +58,17 @@ body {
   border-bottom: 2px solid transparent;
 }
 
+
+a:hover, .social-links ul li a:hover {
+  background-color: #0174DF;
+  color: white;
+}
+
+a {
+  color: #0174DF;
+  text-decoration: none;
+}
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;

@@ -161,6 +161,8 @@
           </blockquote>
           <p>
             <span data-role="current-quote"></span> of <span data-role="total-quotes"></span> 
+          <p style="float:right;">
+            <span data-role="current-quote"></span> of <span data-role="total-quotes"></span>
           </p>
         </div>
         <div class="col-md-1 quote-cycler">
@@ -293,6 +295,7 @@
           $selectedQuote.removeClass('hidden');
           $selectedQuote.removeClass('active');
 
+          updateQuoteNumbers();
         });
 
         menuItems = $('[data-role="menu-items"] li');
@@ -316,7 +319,7 @@
         $('[data-role="viewport-height"]').height(desiredHeight);
 
         // initially
-        updateQuoteNumbers();        
+        updateQuoteNumbers();
       });
 
       /**

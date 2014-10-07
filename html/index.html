@@ -47,7 +47,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <a data-role="update-header-nav" name="home"></a>
-    <div class="jumbotron picture-band picture-band-stars shadow">
+    <div data-role="viewport-height" class="jumbotron picture-band picture-band-new-heights shadow">
       <div class="container">
         <h1>Write Clean Code. Always. Everywhere.</h1>
         <p>The problem with quick and dirty is that the dirty remains long after the quick has been forgotten. </p>
@@ -311,8 +311,12 @@
           }
         });
 
+        // viewport height
+        var desiredHeight = $(window).height() - 200;
+        $('[data-role="viewport-height"]').height(desiredHeight);
+
         // initially
-        updateQuoteNumbers();
+        updateQuoteNumbers();        
       });
 
       /**
@@ -371,9 +375,9 @@
           
           // kick the event to pick up any elements already in view.
           // note however, this only works if the plugin is included after the elements are bound to 'inview'
-          $(function () {
-              $(window).scroll();
-          });
+          // $(function () {
+          //     $(window).scroll();
+          // });
       })(jQuery);
 
     </script>

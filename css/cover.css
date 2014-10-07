@@ -70,11 +70,6 @@ a {
   text-decoration: none;
 }
 
-.quote-cycler {
-  font-size: 2em;
-  padding-top: 30px;
-}
-
 .quote-cycler a {
   color: black;
   background-color: white;
@@ -101,9 +96,12 @@ a {
 
 .picture-band {  
   color: white; 
-  height: 500px;  
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
+}
+
+.picture-band-growing-leaves {
+  background-image: url('images/backlit_keyboard_02.jpg');
 }
 
 .picture-band-stars {
@@ -113,6 +111,15 @@ a {
 .picture-band-learning {
   margin-top: 60px;
   background-image: url('images/10_coderetreat_1920.jpg');  
+  height: 540px;
+}
+
+.picture-band-learning .quote {
+  height: 200px;
+}
+
+.picture-band-learning footer {
+  float: right;
 }
 
 .picture-band-speed {
@@ -128,11 +135,13 @@ a {
 .picture-band h1 {  
   font-size: 4.0em;
   font-weight: bold;
+  text-shadow: 0 4px 4px rgba(0,0,0,0.5);
 }
 
 .picture-band p {  
   font-size: 1.8em;
   text-shadow: 0 1px 1px rgba(0,0,0,1.0);
+  /*width: 60%;*/
 }
 
 .shadow {
@@ -151,6 +160,7 @@ a {
 
 .ctas {
   padding: 20px;
+  margin-top: 100px;
 }
 
 .ctas .btn {
@@ -194,6 +204,10 @@ p {
 
 blockquote {
   font-style: italic;
+}
+
+.container p {
+  padding-top: 20px;
 }
 
 @media (max-width: 768px) {

@@ -121,7 +121,7 @@
             </p>
             <footer>Zeger Hendrikse</footer>
           </div>
-          <div data-role="quote" class="active quote">
+          <div data-role="quote" class="hidden quote">
             <p>
               Stefan had quicky mastered the project's complexity, developed with a lot of passion to bring the project to a higher quality-level. Just a nice guy with a lot of humor in the team!
             </p>
@@ -247,6 +247,12 @@
         $('[data-role="quotes"] [data-role="total-quotes"]').text(quotes.length);
       }
 
+      function showCurrentQuote() {
+        var $selectedQuote = $(quotes[quoteIndex]);
+        $selectedQuote.removeClass('hidden');
+        $selectedQuote.addClass('active');
+      }
+
       // smooth scrolling to anchor
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -269,11 +275,13 @@
         $('[data-role="quote-cycler"] a').click(function(e) {
           e.preventDefault();
           var direction = $(e.target).data('direction');
+          
           // first hide all quotes
           quotes.each(function(_, e) {
-            if(!$(e).hasClass("hidden")){
-              $(e).addClass("hidden");
-              $(e).removeClass("active");
+            var $el = $(e);
+            if(!$el.hasClass("hidden")){
+              $el.addClass("hidden");
+              $el.removeClass("active");
             }
           });
 
@@ -285,11 +293,8 @@
             if (quoteIndex >= quotes.length) quoteIndex = 0;
           }
 
-          // unhide one quote
-          var $selectedQuote = $(quotes[quoteIndex]);
-          $selectedQuote.removeClass('hidden');
-          $selectedQuote.removeClass('active');
-
+          // show one quote
+          showCurrentQuote();
           updateQuoteNumbers();
         });
 
@@ -314,6 +319,7 @@
         });
 
         // initially
+        showCurrentQuote();
         updateQuoteNumbers();
       });
 

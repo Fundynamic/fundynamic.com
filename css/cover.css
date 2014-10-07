@@ -100,10 +100,18 @@ a {
   text-shadow: 0 0px 8px rgba(0,0,0,1);
 }
 
+.picture-band-new-heights {
+  background-image: url('images/reach_new_heights_01.jpg');
+}
+
 .picture-band-growing-leaves {
   background-image: url('images/backlit_keyboard_02.jpg');
 }
 
+/*.picture-band-growing-leaves {
+  background-image: url('images/growing_leaves.jpg');
+}
+*/
 .picture-band-stars {
   background-image: url('images/09_spiral_galaxy_1920.jpg');
 }

@@ -122,6 +122,9 @@ a {
   height: 540px;
 }
 
+.contact {
+  height: 540px;
+}
 .picture-band-learning .quote {
   height: 200px;
   font-style: italic;
@@ -165,7 +168,6 @@ a {
   background-color: black;
   color: white;
 }
-
 
 .ctas {
   padding: 20px;
@@ -217,6 +219,13 @@ blockquote {
 
 .container p {
   padding-top: 20px;
+}
+
+.companies img {
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {

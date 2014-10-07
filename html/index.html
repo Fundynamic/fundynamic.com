@@ -59,8 +59,8 @@
       </div>      
     </div>
 
-    <a data-role="update-header-nav" name="skills"></a>
-    <div class="container">
+    <a data-role="update-header-nav" data-offset="20" name="skills"></a>
+    <div class="container" data-role="viewport-height">
       <div class="row">
         <h1>Skills</h1>
         <p>Don't hasitate to check my <a href="http://www.linkedin.com/in/stefanhendriks" target="_blank">linkedIn</a> or <a href="https://github.com/stefanhendriks" target="_blank">github</a></p>
@@ -110,66 +110,56 @@
       </div>
     </div> <!-- container -->
 
-    <div class="jumbotron picture-band picture-band-launch shadow">
+    <a data-role="update-header-nav" data-offset="-20" name="recommendations"></a>
+    <div class="jumbotron picture-band picture-band-learning shadow">
       <div class="container">
-        <h1>I help you get things done</h1>
-        <p>I deliver code that is production ready. As a Scrum Master I push for transparency and getting things done.</p>
-        <p class="ctas">
-          <a class="btn btn-primary btn-lg primary" role="button" href="#availability">Check my availability</a> 
-        </p>
-      </div>      
-    </div>
-
-    <div class="container">    
-      <a data-role="update-header-nav" name="recommendations"></a>
-      <h2>What did people say who worked with me?</h2>
-      <div class="row">
-        <div class="col-md-1 quote-cycler">
-          <a data-direction="previous" href="#">&lt;</a>
-        </div>
-        <div class="col-md-10" data-role="quotes">
-          <blockquote class="hidden">
+        <h1>Testimonials</h1>
+        <div class="row" data-role="quotes">
+          <div data-role="quote" class="hidden quote">
             <p>
               Stefan demonstrated a level of seniority that could normally be expected only of somebody who is at least ten years older.
             </p>
             <footer>Zeger Hendrikse</footer>
-          </blockquote>
-          <blockquote class="active">
+          </div>
+          <div data-role="quote" class="active quote">
             <p>
               Stefan had quicky mastered the project's complexity, developed with a lot of passion to bring the project to a higher quality-level. Just a nice guy with a lot of humor in the team!
             </p>
             <footer>Roelf-Jan de Vries @ <a href="http://www.q42.nl">Q42</a></footer>
-          </blockquote>
-          <blockquote class="hidden">
+          </div>
+          <div data-role="quote" class="hidden quote">
             <p>
               Stefan has a high standard of software quality. In our team he quickly learned our software stack and was very productive. 
             </p>
             <p>I would work with him again.</p>
             <footer>Christiaan Hees @ <a href="http://www.q42.nl">Q42</a></footer>
-          </blockquote>
-          <blockquote class="hidden">
+          </div>
+          <div data-role="quote" class="hidden quote">
             <p>
               ...he showed a thorough understanding of Agile processes in general and Scrum in particular...
             </p>
             <footer>Zeger Hendrikse</footer>
-          </blockquote>
-          <blockquote class="hidden">
+          </div>
+          <div data-role="quote" class="hidden quote">
             <p>
               Stefan is always very direct, optimistic and humorous, and therefore easy to approach and of tremendous added value to any project
             </p>
             <footer>Zeger Hendrikse</footer>
-          </blockquote>
-          <p>
-            <span data-role="current-quote"></span> of <span data-role="total-quotes"></span> 
+          </div>
           <p style="float:right;">
             <span data-role="current-quote"></span> of <span data-role="total-quotes"></span>
           </p>
         </div>
-        <div class="col-md-1 quote-cycler">
-          <a data-direction="next" href="#">&gt;</a>
-        </div>
-      </div>
 
+        <div class="row" data-role="quote-cycler">
+          <a class="btn btn-primary btn-lg secondary" role="button" data-direction="previous">&lt; Previous</a> 
+          <a class="btn btn-primary btn-lg secondary" role="button" data-direction="next">Next &gt;</a> 
+        </div>
+      </div>    
+    </div>
+
+    <div class="container">    
+      
       <div class="row">
         <h1>Workshops</h1>
         <p>I believe doing hands-on workshops are the only way to really learn something. If you seek for a workshop I will hold in-house at your company. Look no further and contact me.
@@ -245,7 +235,7 @@
           return Math.floor(Math.random()*(max-min+1)+min);
       }
 
-      var quotes = $('[data-role="quotes"] blockquote');
+      var quotes = $('[data-role="quotes"] [data-role="quote"]');
       var quoteIndex = randomIntFromInterval(0, quotes.length - 1);
       var navs;
       var menuItems;

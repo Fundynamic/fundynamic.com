@@ -47,7 +47,7 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <a data-role="update-header-nav" data-offset="50" name="home"></a>
-    <div data-role="viewport-height" class="jumbotron picture-band picture-band-growing-leaves shadow">
+    <div class="jumbotron picture-band picture-band-growing-leaves shadow">
       <div class="container">
         <h1>Get things done</h1>
         <p>With high quality software delivered to your customers in a short time.</p>
@@ -61,7 +61,7 @@
     </div>    
 
     <a data-role="update-header-nav" data-offset="20" name="skills"></a>
-    <div class="container" data-role="viewport-height">
+    <div class="container">
       <div class="row">
         <h1>Skills</h1>
         <p>Do you need to get things done? Fundynamic knows how to handle the following:
@@ -112,7 +112,7 @@
     </div> <!-- container -->
 
     <a data-role="update-header-nav" data-offset="-20" name="recommendations"></a>
-    <div class="jumbotron picture-band picture-band-learning shadow">
+    <div class="jumbotron picture-band viewport-height picture-band-learning shadow">
       <div class="container">
         <h1>Testimonials</h1>
         <div class="row" data-role="quotes">
@@ -159,7 +159,7 @@
       </div>    
     </div>
 
-    <div data-role="viewport-height" class="container">    
+    <div class="container">    
       <h2>Companies who have worked with Stefan</h2>
       <div class="companies">
         <div class="row">
@@ -181,40 +181,23 @@
     </div> <!-- container -->
 
     <a data-offset="40" name="contact"></a>
-    <div class="jumbotron picture-band picture-band-new-heights shadow contact">
+    <div class="jumbotron picture-band viewport-height picture-band-new-heights shadow contact">
       <div class="container">
         <h1>Contact & Availability</h1>
-        <p>I seek cooperation with companies whom I can help make succesful.</p>
-        <p></p>
-      </div>      
-    </div>
-
-    <div class="container">
-      <div class="row">
-        Fundynamic is an Organization owned by Stefan Hendriks.
         <div class="row">            
-            <h2>Status: <span style="color: green;">Available</span></h2>
-            <p>
-              I am currently available. If you are interested, let me know and we can have a talk.
-            </p>
-            <br>
-            <p>Contact me by:</p>
-            <p>Email <a href="mailto:stefan@fundynamic.com">stefan@fundynamic.com</a></p>
-            <p>Phone <a href="tel:+31624107184">06 24 107 184</a></p>
-        </div>
-        <div class="row">
-            <h2>I work on trust</h2>
-            <p> </p>
-            <p>Not happy? Unforseen consequences? Lets talk. I value <em>customer collaboration</em> over <em>contract negotiation</em></p>
-          </div>
+          <h2>Status: <span style="color: green;">Available</span></h2>
+          <br>
+          <p>Contact information:</p>
+          <p>Email <a href="mailto:stefan@fundynamic.com">stefan@fundynamic.com</a></p>
+          <p>Phone <a href="tel:+31624107184">06 24 107 184</a></p>
         </div>
       </div>
-    </div> <!-- container -->
-  </div>
+    </div>
 
     <div class="jumbotron picture-band-footer shadow">
       <div class="container">
         <p>Kvk: 59979216 | <a href="http://www.twitter.com/stefanhendriks" target="_blank">twitter</a> | <a href="http://www.linkedin.com/in/stefanhendriks" target="_blank">linkedIn</a> | <a href="https://github.com/stefanhendriks" target="_blank">github</a></p>
+        <p>Fundynamic is an Organization owned by Stefan Hendriks.</p>
       </div>      
     </div>  
 
@@ -305,12 +288,6 @@
 
             $('[data-role="menu-items"] li[data-nav="' + $el.attr('name') + '"]').addClass("active");
           }
-        });
-
-        // viewport height
-        var desiredHeight = $(window).height();
-        $('[data-role="viewport-height"]').each(function(_, e) {
-          $(e).height(desiredHeight);
         });
 
         // initially

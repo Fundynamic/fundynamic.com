@@ -33,8 +33,7 @@ body {
   float: left;
   margin: 0;
   padding-top: 10px;  
-  font-size: 2.0em;
-  font-weight: bold;
+  font-size: 2.0em;  
 }
 
 .menu-items {
@@ -53,7 +52,6 @@ body {
   padding-right: 0;
   padding-left: 0;
   font-size: 1.1em;
-  font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
@@ -146,7 +144,6 @@ a {
 
 .picture-band h1 {  
   font-size: 4.0em;
-  font-weight: bold;
   text-shadow: 0 4px 4px rgba(0,0,0,0.5);
 }
 
@@ -178,12 +175,10 @@ a {
   margin-right: 20px;
   padding: 12px;
   font-size: 0.9em;
-  font-weight: bold;
 }
 
 .references h2 {
   font-size: 0.9em;
-  font-weight: bold;
 }
 
 .row {
@@ -198,7 +193,6 @@ h1 {
   text-shadow: 0 1px 1px rgba(0,0,0, 0.3);
   color: #FF4000;
   font-size: 3.5em;
-  font-weight: bold;
 }
 
 h2 {

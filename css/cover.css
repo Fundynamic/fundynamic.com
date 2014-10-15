@@ -53,7 +53,6 @@ body {
   border-bottom: 2px solid transparent;
 }
 
-
 a:hover, .social-links ul li a:hover {
   background-color: #0174DF;
   color: white;
@@ -62,6 +61,17 @@ a:hover, .social-links ul li a:hover {
 a {
   color: #0174DF;
   text-decoration: none;
+}
+
+
+h3 a:hover {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+h3 a {
+  color: inherit;
 }
 
 .quote-cycler a {
@@ -92,21 +102,20 @@ a {
   color: white; 
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
-  height: 100%;
+  height: 90%;
+
 }
 
 .viewport-height {
   /* Set rules to fill background */
-  min-height: 100%;
+  min-height: 90%;
 
   /* Align horizontally */
-  left:0;
-  right:0;
-  margin:0 auto;
+  margin:auto auto;
 }
 
-.picture-band-new-heights {
-  background-image: url('images/reach_new_heights_01.jpg');
+.picture-band-contact {
+  background-image: url('images/contact.jpg');
 }
 
 .picture-band-growing-leaves {
@@ -121,18 +130,19 @@ a {
   background-image: url('images/09_spiral_galaxy_1920.jpg');
 }
 
-.picture-band-learning {
+.picture-band-testimonials {
   margin-top: 60px;
   background-image: url('images/10_coderetreat_1920.jpg');  
-  height: 540px;
+  height: 200px;
 }
 
 .contact {
   height: 540px;
 }
-.picture-band-learning .quote {
-  height: 200px;
+
+.quote {
   font-style: italic;
+  text-align: center;
 }
 
 .picture-band-learning footer {
@@ -168,9 +178,13 @@ a {
 
 .picture-band-footer {
   margin-bottom: 0;
-  margin-top: 100px;
   background-color: black;
-  color: white;
+  color: white;  
+}
+
+.picture-band-footer p {
+  text-align: right;
+  font-size: 0.8em;
 }
 
 .ctas {
@@ -227,6 +241,7 @@ blockquote {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {

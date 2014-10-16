@@ -110,7 +110,11 @@ h3 a {
   background-image: url('images/netherlands.png');
   background-position: right;
   background-color: black;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
+}
+
+.picture-band-contact p {
+  font-weight: bolder;
 }
 
 .picture-band-growing-leaves {

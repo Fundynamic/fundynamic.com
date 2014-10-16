@@ -24,7 +24,7 @@ body {
   padding-right: 10px;
 }
 
-.navbar-header h3 {
+.fundynamic-navbar-header h3 {
   color: white;
   float: left;
   margin: 0;
@@ -245,12 +245,13 @@ blockquote {
     width: 100%;
   }
 
-  .navbar-header {
+  .fundynamic-navbar-header {
     float: left;
     width: 100%;
+    font-weight: bolder;
   }
 
-  .navbar-header h3 {
+  .fundynamic-navbar-header h3 {
     float: none;
     text-align: center;
   }
@@ -258,7 +259,8 @@ blockquote {
   .menu-items {
     width: 100%;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
+    text-align: center;
   }
 
 }

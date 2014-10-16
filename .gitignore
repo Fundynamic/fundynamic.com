@@ -1,0 +1,10 @@
+# bower and node stuff
+node_modules/
+bower_components/
+
+# this is the distribution assembled to be uploaded
+dist/
+
+# this is the dir you're working from in combination with grunt watch
+build/
+

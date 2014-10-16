@@ -36,10 +36,10 @@
         </div>
         <div class="menu-items">
           <ul class="nav masthead-nav" data-role="menu-items">
-            <li class="active" data-nav="home"><a href="#home">Home</a></li>
-            <li data-nav="skills"><a href="#skills">Skills</a></li>
-            <li data-nav="recommendations"><a href="#recommendations">Testimonials</a></li>
-            <li data-nav="contact"><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recommendations">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -202,14 +202,6 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-
-      function randomIntFromInterval(min,max) {
-          return Math.floor(Math.random()*(max-min+1)+min);
-      }
-
-      var navs;
-      var menuItems;
-
       // smooth scrolling to anchor
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
@@ -228,85 +220,7 @@
             }
           }
         });
-
-        menuItems = $('[data-role="menu-items"] li');
-        navs = $('[data-role="update-header-nav"]');
-
-        navs.bind('inview', function (event, visible) {
-          var $el = $(event.target);
-          if (visible == true) {
-            menuItems.each(function () {
-              $(this).removeClass("active");
-            });
-
-            $('[data-role="menu-items"] li[data-nav="' + $el.attr('name') + '"]').addClass("active");
-          }
-        });
-
       });
-      
-
-      /**
-       * author Remy Sharp
-       * url http://remysharp.com/2009/01/26/element-in-view-event-plugin/
-       */
-      (function ($) {
-          function getViewportHeight() {
-              var height = window.innerHeight; // Safari, Opera
-              var mode = document.compatMode;
-
-              if ( (mode || !$.support.boxModel) ) { // IE, Gecko
-                  height = (mode == 'CSS1Compat') ?
-                  document.documentElement.clientHeight : // Standards
-                  document.body.clientHeight; // Quirks
-              }
-
-              return height;
-          }
-
-          $(window).scroll(function () {
-              var vpH = getViewportHeight(),
-                  scrolltop = (document.documentElement.scrollTop ?
-                      document.documentElement.scrollTop :
-                      document.body.scrollTop),
-                  elems = [];
-              
-              // naughty, but this is how it knows which elements to check for
-              $.each($.cache, function () {
-                  if (this.events && this.events.inview) {
-                      elems.push(this.handle.elem);
-                  }
-              });
-
-              if (elems.length) {
-                  $(elems).each(function () {
-                      var $el = $(this),
-                          top = $el.offset().top,
-                          height = $el.height(),
-                          inview = $el.data('inview') || false;
-
-                      if (scrolltop > (top + height) || scrolltop + vpH < top) {
-                          if (inview) {
-                              $el.data('inview', false);
-                              $el.trigger('inview', [ false ]);                        
-                          }
-                      } else if (scrolltop < (top + height)) {
-                          if (!inview) {
-                              $el.data('inview', true);
-                              $el.trigger('inview', [ true ]);
-                          }
-                      }
-                  });
-              }
-          });
-          
-          // kick the event to pick up any elements already in view.
-          // note however, this only works if the plugin is included after the elements are bound to 'inview'
-          // $(function () {
-          //     $(window).scroll();
-          // });
-      })(jQuery);
-
     </script>
   </body>
 </html>

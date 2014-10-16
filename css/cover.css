@@ -116,8 +116,10 @@ h3 a {
 }
 
 .picture-band-contact {
-  background-image: url('images/contact.jpg');
-  background-position: left;
+  background-image: url('images/netherlands.png');
+  background-position: right;
+  background-color: black;
+  background-repeat: no-repeat;
 }
 
 .picture-band-growing-leaves {

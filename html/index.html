@@ -209,9 +209,14 @@
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
-              
+              var offsetKind = "offset";
+
               var offset = $(target).data('offset') || 0;
               
+              if ($(window).width() < 768) {
+                offset += 50;                
+              }
+
               $('html,body').animate({             
                 scrollTop: target.offset().top - offset
               }, 500);

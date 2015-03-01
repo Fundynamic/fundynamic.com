@@ -7,12 +7,17 @@ Feel free to fork/clone/etc this branch.
 
 ##Getting started
 Make sure you have `npm` installed. See https://www.npmjs.org/
+
 Make sure you have `Grunt` installed. See http://gruntjs.com/getting-started
+
 Make sure you have `bower` installed. See http://bower.io/ -- or `npm install -g bower`
 
 After your dependencies are set up, run:
 `npm install`
 
+
+##Development
+Simply run `grunt watch` and start developing.
 
 ##Distribution
 To create a distribution, run `grunt dist`

@@ -17,7 +17,7 @@ After your dependencies are set up, run:
 
 
 ##Development
-Simply run `grunt watch` and start developing.
+Simply run `grunt watch` and start developing, and view results from `build/*`.
 
 ##Distribution
 To create a distribution, run `grunt dist`

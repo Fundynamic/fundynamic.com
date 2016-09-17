@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
@@ -14,13 +20,43 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  color: black;
+  color: #B7B7B7;
   font-family: 'ProximaNova-Light';
   font-size: 1.8em;
+  background-color: black;
+}
+
+a {
+  color: #B32F24;
+}
+
+a:hover {
+  color: #B32F24;
+}
+
+.btn-success {
+  background-color: #607625;
+  border-color: #607625;
+}
+
+.btn-success:hover {
+  background-color: #607625;
+  border-color: #607625;
+}
+
+
+.btn-success:hover {
+  background-color: #607625;
+  border-color: #607625;
 }
 
 h2 {
   font-size: 2.0em;
+  color: white;
+}
+
+.jumbotron {
+  height: 500px;
 }
 
 span.highlight {
@@ -30,15 +66,17 @@ span.highlight {
 
 .home {
   background-image: url('images/backlit_keyboard_02.jpg');
-    color: white; 
+  color: white; 
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
   text-align: center;
+  background-color: black;
 }
 
 .contact {
   background-image: url('images/backlit_keyboard_02.jpg');
-    color: white; 
+  background-color: black;
+  color: white; 
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
   text-align: center;
@@ -46,7 +84,8 @@ span.highlight {
 
 .testimonials {
   background-image: url('images/backlit_keyboard_02.jpg');
-    color: white; 
+  background-color: black;
+  color: white; 
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
   text-align: center;
@@ -54,7 +93,8 @@ span.highlight {
 
 .development {
   background-image: url('images/backlit_keyboard_02.jpg');
-    color: white; 
+  background-color: black;
+  color: white; 
   background-position: center; 
   text-shadow: 0 0px 8px rgba(0,0,0,1);
   text-align: center;
@@ -62,6 +102,7 @@ span.highlight {
 
 .workshops {
   background-image: url('images/10_coderetreat_1920.jpg');  
+  background-color: black;
   color: white; 
   /*background-position: center; */
   background-position: bottom;
@@ -91,6 +132,10 @@ span.highlight {
   padding: 12px;
   font-size: 0.9em;
   margin-top: 20px;
+}
+
+.companies .row {
+   background-color: white;
 }
 
 .companies img {

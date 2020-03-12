@@ -1,3 +1,5 @@
+# The fundynamic website is now hosted by Wordpress, this repo is made public for archiving purposes
+
 # Fundynamic
 The homepage of Fundynamic (http://www.fundynamic.com) is open-sourced here.
 
